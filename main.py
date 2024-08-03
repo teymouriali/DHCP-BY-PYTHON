@@ -1,7 +1,10 @@
-import sql
-import os
-import logging
-
+try:
+    import sql
+    import os
+    import logging
+except Exception:
+    print("incorrect value for connection or ipaddress subnet in .env file")
+    exit(0)
 
 def menu():  # for show menu and select item in menu
     logging.debug("run menu")
